@@ -1,0 +1,76 @@
+.rb-container {
+
+  display: block;
+  position: relative;
+}
+
+.rb-container ul.rb {
+  margin: 0;
+  padding: 0;
+  display: inline-block;
+}
+
+.rb-container ul.rb .list-item-rb {
+  list-style: none;
+  margin: auto;
+  margin-left: 10em;
+  min-height: 50px;
+  border-left: 3px solid #3e385f5e;
+  padding: 0 0 50px 30px;
+  position: relative;
+}
+
+.rb-container ul.rb .list-item-rb:last-child {
+  border-left: 0;
+}
+
+.rb-container ul.rb .list-item-rb::before {
+  position: absolute;
+  left: -15px;
+  top: 0px;
+  content: " ";
+  border: 8px solid #232931;
+  border-radius: 500%;
+  background: #F5DB69;
+  height: 30px;
+  width: 30px;
+  transition: all 500ms ease-in-out;
+}
+
+.rb-container ul.rb .list-item-rb:hover::before {
+  border-color: #232931;
+  transition: all 1000ms ease-in-out;
+}
+
+ul.rb .list-item-rb .timestamp {
+  color: #F5DB69;
+  position: relative;
+  font-size: 2.2rem;
+  line-height: .8;
+  font-weight: bold;
+}
+
+.item-title {
+  color: #fff;
+  margin-top: 20px;
+  font-size: 1rem;
+  font-weight: 700;
+}
+
+.item-covers {
+  color: #F5DB69;
+  position: relative;
+  font-size: 1.2rem;
+  line-height: .8;
+  font-weight: bold;
+}
+
+.covers-items {
+  list-style: disc;
+}
+
+.covers-items>li {
+  color: #fff;
+  font-size: 1rem;
+
+}

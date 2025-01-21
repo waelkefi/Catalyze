@@ -1,0 +1,593 @@
+/* header */
+.object-cover {
+    -o-object-fit: cover;
+    object-fit: cover;
+}
+
+.rotate-180 {
+    --tw-rotate: 180deg;
+    transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
+}
+
+.w-full {
+    width: 100%;
+}
+
+.h-full {
+    height: 100%;
+}
+
+.z-\[1\] {
+    z-index: 1;
+}
+
+.top-\[-340px\] {
+    top: -250px;
+}
+
+.header-title {
+    font-size: 75px;
+    color: #fff;
+    text-align: center;
+}
+
+.header-title span {
+    color: #F5DB69;
+}
+
+.header-parag {
+    font-size: 20px;
+    color: #fff;
+    text-align: center;
+}
+
+/* nav */
+nav {
+    width: 100%;
+    padding: 0 60px !important;
+    background-color: rgb(33 28 64 / 49%);
+    height: 60px;
+    display: flex;
+    flex-direction: row;
+    position: fixed;
+    top: 0;
+    z-index: 999;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.navbar-nav {
+    width: 500px;
+    height: 40px;
+    display: flex;
+    /* flex-direction: row; */
+    align-items: center;
+    justify-content: space-evenly;
+    border-radius: 50px;
+    background-color: rgb(26 22 51 / 63%);
+    border: 1px solid #5B557E;
+    /* align-self: center; */
+    margin: auto;
+
+}
+
+.nav-link {
+    color: #fff;
+    font-size: 14px;
+    font-weight: bold;
+}
+
+.nav-link:focus,
+.nav-link:hover {
+    color: #F5DB69;
+}
+
+.navButton {
+    background-color: #F5DB69;
+    color: #211C40;
+    border-radius: 50px;
+    width: 140px;
+    height: 40px;
+    border: none;
+    font-size: 14px;
+    font-weight: bold;
+}
+
+.section-title {
+    color: #F5DB69;
+    font-size: 65px;
+    font-weight: 600;
+    text-align: center;
+    margin: 50px 0 70px;
+}
+
+.title {
+    color: #F5DB69;
+    font-size: 65px;
+    font-weight: 600;
+}
+
+/* who */
+.who {
+    width: 80%;
+    /* background: rgb(62, 56, 95);
+    background: radial-gradient(circle, rgba(62, 56, 95, 0.4) 0%, rgba(13, 11, 26, 0.8) 100%); */
+    /* background: linear-gradient(180deg, rgba(62,56,95,0.4) 0%, rgba(13,11,26,0.8) 100%); */
+    background: radial-gradient(circle, rgba(62, 56, 95, 0.4) 0%, rgba(13, 11, 26, 0.8) 100%);
+    height: 200px;
+    border: 1px solid #5B557E;
+    margin: 0 auto 20px;
+    border-radius: 30px;
+    padding: 50px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.who h2 {
+    color: #F5DB69;
+    font-size: 48px;
+    margin-bottom: 0;
+    margin-right: 50px;
+    flex: 1;
+
+}
+
+.who p {
+    color: #fff;
+    font-size: 16px;
+    margin: 0;
+    flex: 3;
+    text-align: justify;
+}
+
+
+/* WhatWEDO */
+
+.card-we-do {
+    height: 415px;
+    background: radial-gradient(circle, rgba(62, 56, 95, 0.4) 0%, rgba(13, 11, 26, 0.8) 100%);
+    border: 1px solid #5B557E;
+    border-radius: 30px;
+    padding: 20px 40px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.card-we-do>h4 {
+    color: #fff;
+    font-size: 22px;
+    text-align: center;
+    font-weight: 400;
+}
+
+.card-we-do>p {
+    color: #fff;
+    font-size: 16px;
+    text-align: center;
+}
+
+#card-we-do1:hover {
+    background-color: #040015;
+    /* background-image: radial-gradient(circle closest-corner at center top, rgba(255, 255, 255, 0.89) 10%, rgba(230, 25, 101, 0.63) 100%) !important; */
+    background-image: radial-gradient(circle at center top, rgba(255, 255, 255, 0.89) 10%, rgba(230, 25, 101, 0.63) 100%) !important;
+}
+
+#card-we-do2:hover {
+    background-color: #040015;
+    /* background-image: radial-gradient(circle closest-corner at center top, rgba(255, 255, 255, 0.89) 10%, rgba(52,188,222,0.65) 100%) !important; */
+    background-image: radial-gradient(circle at center top, rgba(255, 255, 255, 0.89) 10%, rgba(52, 188, 222, 0.65) 100%) !important;
+}
+
+#card-we-do3:hover {
+    background-color: #040015;
+    /* background-image: radial-gradient(circle closest-corner at center top, rgba(255, 255, 255, 0.89) 10%, rgba(26,137,84,0.69) 100%) !important; */
+    background-image: radial-gradient(circle at center top, rgba(255, 255, 255, 0.89) 10%, rgba(26, 137, 84, 0.69) 100%) !important;
+}
+
+
+
+
+
+.card-we-do {
+    transition: transform 0.9s ease;
+}
+
+.card-we-do:hover .weDoImgContainer img {
+    transform: translateY(-50px) scale(2);
+    /* Déplacez l'image vers le haut et effectuez un zoom-in */
+    transition: transform 0.9s ease;
+}
+
+
+/* meetUp */
+
+.meetUpContainer {
+    margin: 30px 0;
+    display: flex;
+    width: 100%;
+}
+
+.meetUpContainer>h2 {
+    position: absolute;
+    left: 300px;
+}
+
+.meey:hover .meetUpContainer>.title {
+    transform: translateX(-150px);
+    /* Déplacez le titre vers la gauche (left 0) */
+    transition: transform 0.9s ease;
+    /* Ajoutez une transition pour l'animation */
+}
+
+.meey:hover .meetUpContainer>svg {
+    transform: translateX(700px);
+    /* Déplacez le titre vers la gauche (left 0) */
+    transition: transform 0.9s ease;
+    /* Ajoutez une transition pour l'animation */
+}
+
+/* collaborators */
+.wrapper-collab {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.container-collab {
+    height: 400px;
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: start;
+}
+
+.card-collab {
+    width: 80px;
+    border-radius: .75rem;
+    background-size: cover;
+    cursor: pointer;
+    overflow: hidden;
+    border-radius: 2rem;
+    margin: 0 10px;
+    display: flex;
+    align-items: flex-end;
+    transition: .6s cubic-bezier(.28, -0.03, 0, .99);
+    box-shadow: 0px 10px 30px -5px rgba(0, 0, 0, 0.8);
+    flex: 1;
+    position: relative;
+    /* Ajoutez la position relative pour permettre un positionnement absolu de ::before */
+}
+
+.card-collab>div {
+    display: none;
+}
+
+.card-collab>div h3 {
+    color: #fff;
+    font-size: 2.5rem;
+    margin: 0;
+    font-weight: bold;
+}
+
+.card-collab>div p {
+    color: #F5DB69;
+    font-size: 2rem;
+    margin: 0;
+}
+
+.card-collab:hover::before {
+    display: block;
+    /* Affichez ::before lors du survol */
+}
+
+.card-collab:hover div {
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+    padding: 20px 40px;
+    z-index: 999;
+}
+
+.card-collab#c1 {
+    background-image: url(../media/aziz.png);
+    -webkit-filter: grayscale(100%);
+    filter: grayscale(100%);
+    background-position: center;
+    background-size: cover;
+}
+
+.card-collab#c1:hover {
+    flex: 3;
+    background: url(../media/aziz.png);
+    -webkit-filter: none;
+    position: relative;
+    background-position: center;
+    background-size: cover;
+}
+
+
+.card-collab#c1:hover::before {
+    background: linear-gradient(180deg, rgba(13, 11, 26, 0) 0%, rgba(33, 28, 64, 1) 100%);
+    /* Ajoute un dégradé en arrière-plan de l'élément ::before */
+    content: '';
+    /* Ajoute du contenu à l'élément ::before pour qu'il soit affiché */
+    display: block;
+    /* Affiche l'élément ::before en tant que bloc */
+    height: 100%;
+    /* Définit la hauteur de l'élément ::before à 100% de la hauteur de son parent */
+    position: absolute;
+    /* Définit la position absolue de l'élément ::before par rapport à son parent */
+    width: 100%;
+    /* Définit la largeur de l'élément ::before à 100% de la largeur de son parent */
+}
+
+.card-collab#c2 {
+    background-image: url(../media/asma.png);
+    -webkit-filter: grayscale(100%);
+    filter: grayscale(100%);
+    background-position: center;
+    background-size: cover;
+}
+
+.card-collab#c2:hover::before {
+    background: linear-gradient(180deg, rgba(13, 11, 26, 0) 0%, rgba(230, 25, 101, 1) 100%);
+    /* Ajoute un dégradé en arrière-plan de l'élément ::before */
+    content: '';
+    /* Ajoute du contenu à l'élément ::before pour qu'il soit affiché */
+    display: block;
+    /* Affiche l'élément ::before en tant que bloc */
+    height: 100%;
+    /* Définit la hauteur de l'élément ::before à 100% de la hauteur de son parent */
+    position: absolute;
+    /* Définit la position absolue de l'élément ::before par rapport à son parent */
+    width: 100%;
+    /* Définit la largeur de l'élément ::before à 100% de la largeur de son parent */
+}
+
+.card-collab#c2:hover {
+    flex: 3;
+    background-image: url(../media/asma.png);
+    -webkit-filter: none;
+}
+
+.card-collab#c3 {
+    background-image: url(../media/wael.png);
+    -webkit-filter: grayscale(100%);
+    filter: grayscale(100%);
+    background-position: center;
+    background-size: cover;
+}
+
+.card-collab#c3:hover::before {
+    background: linear-gradient(180deg, rgba(13, 11, 26, 0) 0%, rgba(32, 171, 105, 1) 100%);
+    /* Ajoute un dégradé en arrière-plan de l'élément ::before */
+    content: '';
+    /* Ajoute du contenu à l'élément ::before pour qu'il soit affiché */
+    display: block;
+    /* Affiche l'élément ::before en tant que bloc */
+    height: 100%;
+    /* Définit la hauteur de l'élément ::before à 100% de la hauteur de son parent */
+    position: absolute;
+    /* Définit la position absolue de l'élément ::before par rapport à son parent */
+    width: 100%;
+    /* Définit la largeur de l'élément ::before à 100% de la largeur de son parent */
+}
+
+.card-collab#c3:hover {
+    flex: 3;
+    background-image: url(../media/wael.png);
+    -webkit-filter: none;
+}
+
+.card-collab#c4 {
+    background-image: url(../media/hssan.png);
+    -webkit-filter: grayscale(100%);
+    filter: grayscale(100%);
+    background-position: center;
+    background-size: cover;
+}
+
+.card-collab#c4:hover {
+    flex: 3;
+    background-image: url(../media/hssan.png);
+    -webkit-filter: none;
+}
+
+.card-collab#c4:hover::before {
+    background: linear-gradient(180deg, rgba(13, 11, 26, 0) 0%, rgba(52, 188, 222, 1) 100%);
+    /* Ajoute un dégradé en arrière-plan de l'élément ::before */
+    content: '';
+    /* Ajoute du contenu à l'élément ::before pour qu'il soit affiché */
+    display: block;
+    /* Affiche l'élément ::before en tant que bloc */
+    height: 100%;
+    /* Définit la hauteur de l'élément ::before à 100% de la hauteur de son parent */
+    position: absolute;
+    /* Définit la position absolue de l'élément ::before par rapport à son parent */
+    width: 100%;
+    /* Définit la largeur de l'élément ::before à 100% de la largeur de son parent */
+}
+
+
+/* how we */
+
+.card-Help {
+    position: relative;
+    border-radius: 10px;
+    /* Pour arrondir les coins */
+    overflow: hidden;
+    /* Nécessaire pour couper l'arrière-plan */
+    padding: 20px;
+    z-index: 1;
+    background-color: #040015;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    height: 100%;
+    margin-bottom: 20px;
+}
+
+.card-Help::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(180deg, #948EBB 0%, #0D0B1A 100%);
+    ;
+    z-index: -1;
+    /* Place derrière le contenu */
+    border-radius: 10px;
+    padding: 2px;
+    /* Taille de la bordure */
+    -webkit-mask: linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0);
+    mask: linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0);
+    -webkit-mask-composite: destination-out;
+    mask-composite: exclude;
+}
+
+.card-Help>.icon-help {
+    margin-right: 20px;
+}
+
+.card-Help p {
+    color: #fff;
+    margin: 0;
+}
+
+.card-connect {
+    background: radial-gradient(circle, rgba(62, 56, 95, 0.4) 0%, rgba(13, 11, 26, 0.8) 100%);
+    border: 1px solid #5B557E;
+    border-radius: 30px;
+    padding: 50px 40px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.card-connect-icon {
+    height: 60px;
+    margin-bottom: 20px;
+}
+
+.card-connect-icon img {
+    height: 100%;
+    width: auto;
+}
+
+.card-connect h3 {
+    font-size: 1.4rem;
+    font-weight: bold;
+    color: #fff;
+    margin: 0;
+}
+
+.card-connect p {
+    font-size: 1rem;
+    color: #fff;
+    margin: 0;
+}
+
+.form-container {
+    background: radial-gradient(circle, rgba(62, 56, 95, 0.4) 0%, rgba(13, 11, 26, 0.8) 100%);
+    border: 1px solid #5B557E;
+    border-radius: 30px;
+    padding: 30px;
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+}
+
+.form-container h3 {
+    color: #F5DB69;
+    font-size: 3rem;
+    font-weight: 800;
+    text-transform: uppercase
+}
+
+.form-container p {
+    color: #fff;
+    font-size: 1.2rem;
+    letter-spacing: 1.5px;
+    margin-bottom: 30px;
+}
+
+.form-container form {
+
+    display: flex;
+    flex-direction: column;
+}
+
+.form-container form label {
+    color: #F5DB69;
+    font-weight: 600;
+    margin-bottom: 10px;
+}
+
+.form-container form input {
+    background-color: rgba(255, 255, 255, 0.075);
+    border: none;
+    border-radius: 5px;
+    height: 45px;
+    padding: 10px;
+    color: #fff;
+    margin-bottom: 20px;
+}
+
+.form-container form button {
+    background-color: #F5DB69;
+    color: #fff;
+    border-radius: 50px;
+    height: 40px;
+    width: 200px;
+    border: none;
+    color: #211C40;
+    font-weight: 600;
+
+}
+
+.image-container-connact {
+    border-radius: 30px;
+    border: 1px solid #5B557E;
+    padding: 0;
+}
+
+.image-container-connact img {
+    width: 100%;
+    height: 100%;
+    border-radius: 30px;
+}
+
+.section-title-justify {
+    color: #F5DB69;
+    font-size: 65px;
+    font-weight: 800;
+    margin: 50px 0 30px;
+}
+
+.subtitle-justify {
+    font-size: 20px;
+    text-transform: capitalize;
+    font-weight: 400;
+    color: #fff;
+    margin-bottom: 50px;
+    max-width: 90%;
+}
+
+.separation-bar {
+    height: 3px;
+    width: 100%;
+    background-color: #fff;
+}
+
+.footer-text {
+    color: #fff;
+    font-size: 1rem;
+    font-weight: 600;
+    text-align: center;
+}
