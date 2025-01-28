@@ -20,7 +20,7 @@ const WhyWeCanHelp = () => {
             </svg>,
             title: "Tailored Solutions",
             description:
-                "Catalyse offers personalized solutions designed to meet your unique needs and requirements. By understanding your specific challenges and goals, we tailor our approach to ensure optimal outcomes.",
+                "Catalyse offers personalized solutions designed to meet your unique needs and requirements. By understanding your specific challenges and goals, we tailor our approach to ensure optimal outcomes",
         },
         {
             icon: <svg width="71" height="72" viewBox="0 0 71 72" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -37,7 +37,7 @@ const WhyWeCanHelp = () => {
             ,
             title: "Collaborative Partnership",
             description:
-                "We believe in fostering a collaborative partnership with our clients, working closely with them throughout the development process. By maintaining open communication and active involvement, we ensure that our clients are engaged and satisfied with the results.",
+                "We believe in fostering a collaborative partnership with our clients, working closely with them throughout the development process. By maintaining open communication and active involvement, we ensure that our clients are engaged and satisfied with the results",
         },
         {
             icon: <svg width="71" height="72" viewBox="0 0 71 72" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -53,7 +53,7 @@ const WhyWeCanHelp = () => {
             </svg>,
             title: "Innovative Approach",
             description:
-                "Catalyse adopts an innovative approach to digital project identity building, leveraging the latest technologies and industry best practices. By staying at the forefront of technological advancements, we deliver solutions that are not only effective but also future-proof.",
+                "Catalyse adopts an innovative approach to digital project identity building, leveraging the latest technologies and industry best practices. By staying at the forefront of technological advancements, we deliver solutions that are not only effective but also future-proof",
         },
         {
             icon: <svg width="71" height="72" viewBox="0 0 71 72" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -70,7 +70,7 @@ const WhyWeCanHelp = () => {
             ,
             title: "Holistic Support",
             description:
-                "Catalyse provides comprehensive support beyond just development, encompassing aspects such as branding, design, and strategic consultation. By offering a full-suite solution, we ensure that all facets of your digital project are meticulously crafted and aligned, resulting in a cohesive and impactful outcome.",
+                "Catalyse provides comprehensive support beyond just development, encompassing aspects such as branding, design, and strategic consultation. By offering a full-suite solution, we ensure that all facets of your digital project are meticulously crafted and aligned, resulting in a cohesive and impactful outcome",
         },
     ];
 

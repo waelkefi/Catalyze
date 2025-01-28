@@ -12,7 +12,7 @@ function Footer() {
         <p className='footer-text'>Catalyze Teck © 2025</p>
 
         <div>
-          <ul><li><a href=""></a><img src={In} alt="" /></li><li><a href=""></a><img src={Fb} alt="" /></li><li><a href=""></a><img src={Insta} alt="" /></li></ul>
+          <ul><li><a href="https://www.linkedin.com/company/teckcatalyze/?viewAsMember=true " target='_blank'><img src={In} alt="" /></a></li><li><a href="https://www.facebook.com/profile.php?id=61566515653357 " target='_blank'><img src={Fb} alt="" /></a></li><li><a href="https://www.instagram.com/catalyze.teck/" target='_blank'><img src={Insta} alt="" /></a></li></ul>
         </div>
       </div>
 

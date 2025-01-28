@@ -19,7 +19,7 @@ function Connect() {
                         </div>
 
                         <h3>Drop Us A Line</h3>
-                        <p>Reach out and let's begin the dialogue.</p>
+                        <p>Reach out and let's begin the dialogue</p>
                     </div>
 
 
@@ -31,13 +31,13 @@ function Connect() {
                         </div>
 
                         <h3>Book A Call</h3>
-                        <p>Schedule a consultation in our Calendly.</p>
+                        <p>Schedule a consultation in our Calendly</p>
                     </div>
                 </div>
                 <div className="col-md-7 mb-4 ">
                     <div className="form-container">
                         <h3>Connect With <br /> Ease</h3>
-                        <p>Your curiosity, insights, and potential collaborations are just a click away. Lest's begin the conversation.</p>
+                        <p>Your curiosity, insights, and potential collaborations are just a click away. Lest's begin the conversation</p>
                         <form>
                             <label htmlFor="Name">Name</label>
                             <input type="text" placeholder="Name" required />

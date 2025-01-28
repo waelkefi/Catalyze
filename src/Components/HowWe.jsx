@@ -6,7 +6,7 @@ const stepsData = [
     {
         title: "EXPLORE",
         description:
-            "During this first step, we will make initial contact with you to understand your business, your objectives and your needs, and to define how we can help you.",
+            "During this first step, we will make initial contact with you to understand your business, your objectives and your needs, and to define how we can help you",
         covers: [
             "The problems you're dealing with",
             "Your specific requirements",
@@ -17,7 +17,7 @@ const stepsData = [
     {
         title: "IN-DEPTH EXPLORATION",
         description:
-            "In this second step, let's dive deep into your needs by examining your business and brand, conducting detailed market research, identifying your potential audience and performing detailed benchmarking.",
+            "In this second step, let's dive deep into your needs by examining your business and brand, conducting detailed market research, identifying your potential audience and performing detailed benchmarking",
         covers: [
             "Taking a close look at your brand and business",
             "Researching your market, industry, and competitors",
@@ -28,7 +28,7 @@ const stepsData = [
     {
         title: "CATALYTIC APPROACH",
         description:
-            "Now, with our customized approach, uniquely tailored to address your requirements, we formulate a comprehensive strategy for your business, meticulously designed to assist you in reaching your desired goals.",
+            "Now, with our customized approach, uniquely tailored to address your requirements, we formulate a comprehensive strategy for your business, meticulously designed to assist you in reaching your desired goals",
         covers: [
             "Crafting a custom roadmap for your business journey",
             "Setting milestones, both short and long-term, to guide your project",
@@ -39,7 +39,7 @@ const stepsData = [
     {
         title: "SET UP",
         description:
-            "Your custom-tailored strategy is primed and ready to implement. Now it's time to connect with your target audience.",
+            "Your custom-tailored strategy is primed and ready to implement. Now it's time to connect with your target audience",
         covers: [
             "Designing and building projects that cater to your goals",
             "Developing a visual style that reflects your brand consistently",
@@ -50,7 +50,7 @@ const stepsData = [
     {
         title: "LAUNCH",
         description:
-            "Your personalized plan is all set to go. It's packed with clear steps and simple instructions to help your business move forward and reach its goals.",
+            "Your personalized plan is all set to go. It's packed with clear steps and simple instructions to help your business move forward and reach its goals",
         covers: [
             "Creating a launch plan that's all about achieving your goals and resonating with your target audience",
             "Building connections and engaging your community to keep them involved",
@@ -61,7 +61,7 @@ const stepsData = [
     {
         title: "EVALUATE AND REFINE",
         description:
-            "After your strategy is launched, we'll work together to analyze data and gain insights. This will help us understand what parts of your project were successful and what areas need improvement.",
+            "After your strategy is launched, we'll work together to analyze data and gain insights. This will help us understand what parts of your project were successful and what areas need improvement",
         covers: [
             "Analyzing the outcomes to pinpoint successes and areas for improvement",
             "Evaluating each aspect of your project to ensure alignment with your goals and captivation of your audience",
