@@ -25,7 +25,7 @@ function Connect() {
 
                 </div>
                 <div className="col-md-6 mb-4">
-                    <div className="card-connect">
+                    <div className="card-connect" onClick={() => window.open('https://calendly.com/teckcatalyze/30min?back=1&month=2025-01&date=2025-01-29', '_blank')} style={{ cursor: "pointer" }}>
                         <div className='card-connect-icon'>
                             <img src={icon2} alt="icon-catalyze" />
                         </div>
@@ -46,7 +46,7 @@ function Connect() {
                             <label htmlFor="Message">Question</label>
                             <input placeholder="How can we help you?" required />
                             <div className='d-flex flex-row justify-content-end'>
-                                <button type="submit" className='form-btn'>Send The Question</button>
+                                <button type="submit" className='form-btn'>Request</button>
                             </div>
                         </form>
                     </div>
