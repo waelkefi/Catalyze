@@ -1,6 +1,8 @@
-import React from "react";
+import React, { useEffect, useRef, useState } from "react";
 import "./ScrollIndicator.css";
 import SectionTitle from "./SectionTitle";
+import { motion } from "framer-motion";
+import { useInView } from "react-intersection-observer";
 
 const stepsData = [
     {
@@ -71,33 +73,77 @@ const stepsData = [
     },
 ];
 
-const StepsComponent = () => (
-    <div className="container" style={{ position: 'relative' }}>
-        <SectionTitle title="How We Proceed" />
-        <div className="rb-container">
-            <ul className="rb">
+const StepsComponent = () => {
+    const [progressHeight, setProgressHeight] = useState(0);
+    const sectionRef = useRef(null);
 
-                {stepsData.map((step, index) => (
-                    <li key={index} className="rb-item list-item-rb" ng-repeat="itembx">
-                        <h2 className="timestamp">{step.title}</h2>
-                        <p className="item-title">{step.description}</p>
-                        <p className="item-covers">This Covers</p>
-                        <ul className="covers-items">
-                            {step.covers.map((cover, idx) => (
-                                <li key={idx} style={{ marginTop: "0.5rem", color: "#fff" }}>
-                                    {cover}
-                                </li>
-                            ))}
-                        </ul>
+    useEffect(() => {
+        const handleScroll = () => {
+            if (!sectionRef.current) return;
+
+            const section = sectionRef.current;
+            const { top, height } = section.getBoundingClientRect();
+            const windowHeight = window.innerHeight;
+
+            // Calculer le pourcentage de progression dans la section uniquement
+            let scrollProgress = 0;
+            if (top < windowHeight && top + height > 0) {
+                const visibleHeight = Math.min(windowHeight - top, height);
+                scrollProgress = ((windowHeight - top) / height) * 100 ;
+                scrollProgress = Math.max(0, Math.min(scrollProgress, 100)); // Limiter entre 0 et 100
+            }
+
+            setProgressHeight(scrollProgress);
+        };
+
+        window.addEventListener("scroll", handleScroll);
+        return () => window.removeEventListener("scroll", handleScroll);
+    }, []);
+
+    return (
+        <div className="container" style={{ position: "relative" }} id="hwP">
+            <SectionTitle title="How We Proceed" />
+            <div className="rb-container" ref={sectionRef}>
+                <motion.div
+                    className="progress-bar"
+                    style={{ height: `${progressHeight}% ` }}
+                    initial={{ height: `${0}%` }}
+                    animate={{ height: `${progressHeight}% ` }}
+                    transition={{ duration: 0.2 }}
+                ></motion.div>
+                <ul className="rb">
+                    {stepsData.map((step, index) => (
+                        <TimelineItem key={index} step={step} index={index} />
+                    ))}
+                </ul>
+            </div>
+        </div>
+    );
+};
+
+const TimelineItem = ({ step, index }) => {
+    const { ref, inView } = useInView({ triggerOnce: true, threshold: 0.2 });
+
+    return (
+        <motion.li
+            ref={ref}
+            className="rb-item list-item-rb"
+            // initial={{ opacity: 0, x: -50 }}
+            // animate={{ opacity: inView ? 1 : 0, x: inView ? 0 : -50 }}
+            // transition={{ duration: 0.5, delay: index * 0.2 }}
+        >
+            <h2 className="timestamp">{step.title}</h2>
+            <p className="item-title">{step.description}</p>
+            <p className="item-covers">This Covers</p>
+            <ul className="covers-items">
+                {step.covers.map((cover, idx) => (
+                    <li key={idx} style={{ marginTop: "0.5rem", color: "#fff" }}>
+                        {cover}
                     </li>
                 ))}
-
             </ul>
-        </div>
-
-    </div>
-
-
-);
+        </motion.li>
+    );
+};
 
 export default StepsComponent;

@@ -28,10 +28,10 @@ function NavBar() {
               <a className="nav-link" href="#about" >About Us</a>
             </li>
             <li className="nav-item">
-              <a className="nav-link" href="#x">What We Do</a>
+              <a className="nav-link" href="#whtwdo">What We Do</a>
             </li>
             <li className="nav-item">
-              <a className="nav-link" href="#y">How We Proceed</a>
+              <a className="nav-link" href="#hwP">How We Proceed</a>
             </li>
           </ul>
           <a target="_blank" href="https://calendly.com/teckcatalyze/30min?back=1&month=2025-01&date=2025-01-29" className="navButton">Book A Call</a>

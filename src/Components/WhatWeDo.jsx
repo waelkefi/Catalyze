@@ -5,7 +5,7 @@ import image3 from "../media/3dicons3.png"
 import SectionTitle from './SectionTitle'
 function WhatWeDo() {
     return (
-        <div className="container">
+        <div className="container" id='whtwdo'>
             <SectionTitle title="What We Do?" />
             <div className="row">
                 <div className="col-md-4">

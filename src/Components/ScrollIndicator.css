@@ -15,18 +15,18 @@
   margin: auto;
   margin-left: 10em;
   min-height: 50px;
-  border-left: 3px solid #3e385f5e;
+  border-left: 4px solid #3e385f5e;
   padding: 0 0 50px 30px;
   position: relative;
 }
 
 .rb-container ul.rb .list-item-rb:last-child {
-  border-left: 0;
+padding-bottom: 0;
 }
 
 .rb-container ul.rb .list-item-rb::before {
   position: absolute;
-  left: -15px;
+  left: -17px;
   top: 0px;
   content: " ";
   border: 8px solid #232931;
@@ -73,4 +73,20 @@ ul.rb .list-item-rb .timestamp {
   color: #fff;
   font-size: 1rem;
 
+}
+
+.progress-bar {
+  position: absolute;
+  left: 10rem;
+  top: 0;
+  width: 4px;
+  background: #F5DB69; /* Violet animé */
+  border-radius: 5px;
+}
+
+
+@media screen and (max-width: 768px) {
+  .progress-bar {
+      left: 10px !important;
+  }
 }
